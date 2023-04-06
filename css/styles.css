@@ -1,0 +1,241 @@
+/* --------- RESETEO DE CSS---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* toda la caja con el padding y el borde forma parte de ese 100% */
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: "acme";
+    src: url("../fonts/Acme/Acme-Regular.ttf");
+}
+
+@font-face {
+    font-family: "permanentmaker";
+    src: url("../fonts/Permanent_Marker/PermanentMarker-Regular.ttf");
+}
+
+@font-face {
+    font-family: "righteos";
+    src: url("../fonts/Righteous/Righteous-Regular.ttf");
+}
+
+* {
+    font-family: 'acme', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/* --------- HEADER ALL hasta 576px---------- */
+
+.header {
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    color: whitesmoke;
+
+}
+
+.header__titulo-principal h1 {
+    color: whitesmoke;
+    font-family: permanentmaker, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.header__logo {
+    display: none;
+}
+
+.header__nav-list-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header__nav-list-nav li {
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.header__nav-list-nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.header__form {
+    display: none;
+}
+
+
+/*--------------------FOOTER ALL--------------------- */
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+}
+.footer__contacto-h3{
+    text-align: center;
+}
+.footer__contacto {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: left;
+}
+
+.footer__contacto-contenedor {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__contacto-iframe-gmaps {
+    width: 80vw;
+    height: 80vw;
+    padding: 20px;
+    align-items: center;
+}
+
+.footer__contenedor-redes {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+
+.footer__contenedor-redes li {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__contenedor-redes a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+.footer__contenedor-redes h3 {
+    color: white;
+
+}
+
+.footer__contenedor-redes img {
+    width: 30px;
+}
+
+
+/*--------------------BODY INDEX--------------------- */
+
+
+.main__ofertas-section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.main__ofertas-section__contenedor-fig-index figure img {
+    width: 80vw;
+    align-items: center;
+}
+
+.main__ofertas-section__contenedor-fig-index figure figcaption {
+    width: 80vw;
+    text-align: center;
+}
+
+.main__ofertas-section__contenedor-fig-index figure p {
+    width: 80vw;
+    text-align: center;
+}
+
+.main__nuestra-empresa {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.main__nuestra-empresa p {
+    width: 80vw;
+    padding: 0px;
+}
+
+.main__nuestra-empresa figure img {
+    width: 80vw;
+
+}
+
+.main__ofertas-section-h2 {
+    font-family: righteos, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+.main__nuestra-empresa h2 {
+    font-family: righteos, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+/*-----------MEDIA---------------*/
+@media(min-width: 576px) {
+
+    /*-----------HEADER---------------*/
+    .header__form {
+        display: block;
+    }
+
+    .header__logo {
+        display: block;
+        width: 10vh;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr;
+        grid-template-rows: 10vh 5vh;
+    }
+
+    .header__nav-list-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+
+    }
+
+    .header__nav {
+        grid-column: span 3;
+    }
+
+    /*---------FOOTER ALL-------- */
+    .footer {
+        display: flex;
+        flex-direction: row;
+    }
+    .footer__contacto-iframe-gmaps {
+        width: 50vw;
+        height: 40vw;
+        padding: 20px;
+        align-items: center;
+    }
+    
+}
