@@ -14,10 +14,15 @@
 <body>
     <header class="header">
         <figure>
-            <img class="header__logo" src="./img/logo-gcstore.png" alt="Logo GC Store">
+            <img class="header__logo" src="../img/logo-gcstore.png" alt="Logo GC Store">
         </figure>
-        <h1 class="header__titulo-principal">GC Store</h1>
-
+        <div class="header__titulo-principal">
+            <h1>GC Store</h1>
+        </div>
+        <form class="header__form" action="">
+            <input class="header__form-search" type="search" placeholder="Buscar...">
+            <input class="header__form-submit-search" type="submit" value="enviar">
+        </form>
         <nav class="header__nav">
             <ul class="header__nav-list-nav">
                 <li><a href="../index.html">Inicio</a></li>
@@ -28,11 +33,6 @@
                 <li><a href="./contactenos.html">Contáctenos</a></li>
             </ul>
         </nav>
-
-        <form class="header__form" action="">
-            <input class="header__form-search" type="search" placeholder="Buscar...">
-            <input class="header__form-submit-search" type="submit" value="enviar">
-        </form>
     </header>
 
     <main class="main-contactenos">
@@ -76,19 +76,22 @@
 
     <footer class="footer">
         <div class="footer__contenedor-redes">
-            <h3>Siguenos En:</h3>
+            <h3 class="footer__contenedor-redes-h3">Siguenos En:</h3>
             <ul>
-                <li><img src="../img/fb_icon-icons.com_65434.png" alt="facebook-icon"><a href="">Facebook</a></li>
-                <li><img src="../img/social_media_logo_twitter_icon-icons.com_59061.png" alt="facebook-icon"><a
+                <li class="footer__contenedor-redes-li"><img src="../img/fb_icon-icons.com_65434.png"
+                        alt="facebook-icon"><a href="">Facebook</a></li>
+                <li class="footer__contenedor-redes-li"><img
+                        src="../img/social_media_logo_twitter_icon-icons.com_59061.png" alt="facebook-icon"><a
                         href="">Twitter</a></li>
-                <li><img src="../img/social_media_logo_instagram_icon-icons.com_59062.png" alt="facebook-icon"><a
+                <li class="footer__contenedor-redes-li"><img
+                        src="../img/social_media_logo_instagram_icon-icons.com_59062.png" alt="facebook-icon"><a
                         href="">Instagram</a></li>
             </ul>
         </div>
 
         <div class="footer__contacto">
-            <h3>Contacto:</h3>
-            <div class="footer__contacto__contenedor">
+            <h3 class="footer__contacto-h3">Contacto:</h3>
+            <div class="footer__contacto-contenedor">
                 <ul>
                     <li>Direccion: Suipacha 853</li>
                     <li>telefono: 0054 11 1234 5678 </li>
