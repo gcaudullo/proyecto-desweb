@@ -36,7 +36,7 @@ ol {
 
 
 
-/* --------- HEADER ALL hasta 576px---------- */
+/* ------------------------------------ HEADER ALL hasta 576px--------------------------------------------- */
 
 .header {
     background-color: rgb(0, 0, 0);
@@ -80,7 +80,7 @@ ol {
 }
 
 
-/*--------------------FOOTER ALL--------------------- */
+/*--------------------------------------------------FOOTER ALL hasta 576px---------------------------------------------- */
 .footer {
     display: flex;
     flex-direction: column;
@@ -145,10 +145,11 @@ ol {
 }
 
 
-/*--------------------BODY INDEX--------------------- */
-.main{
+/*----------------------------------------------BODY INDEX hasta 576px------------------------------------------------------ */
+.main {
     padding: 15px;
 }
+
 .main__ofertas-section-h2 {
     font-family: righteos, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
@@ -156,22 +157,22 @@ ol {
     font-size: 1.5rem;
 }
 
-.main__ofertas-section__contenedor-fig-index{
+.main__ofertas-section__contenedor-fig-index {
     display: flex;
     flex-direction: column;
     /* justify-content: space-around; */
     align-items: center;
     gap: 10px;
     background-color: blue;
-    
+
 }
 
-.ofertas-seccion__tarjeta{
+.ofertas-seccion__tarjeta {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    
+
 }
 
 .ofertas-seccion__tarjeta p {
@@ -206,16 +207,53 @@ ol {
 
 }
 
+/*---------------------------------------BODY PAGES PRODUCTOS hasta 576px------------------------------------------- */
+
+.main-pages {
+    padding: 15px;
+}
+
+.main-pages__marcas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: blue;
+}
+
+.main-pages__marcas-h2 {
+    font-family: righteos, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.main-pages__marcas-items {
+    text-align: center;
+    padding: 0px;
+    font-size: 1.2rem;
+}
 
 
+.main-pages__productos-h2 {
+    font-family: righteos, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.main-pages__productos-contenedor-figuras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: blue;
+
+}
 
 
-
-
-/*-----------MEDIA---------------*/
+/*------------------------------------------MEDIA--------------------------------------------------------*/
 @media(min-width: 576px) {
 
-    /*-----------HEADER---------------*/
+    /*-------------------------------------HEADER------------------------------------------------------*/
 
 
     .header__logo {
@@ -244,14 +282,14 @@ ol {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        
+
     }
 
     .header__nav {
         grid-column: span 3;
     }
 
-    /*---------FOOTER ALL-------- */
+    /*---------------------------------FOOTER ALL----------------------------------------- */
     .footer {
         display: flex;
         flex-direction: row;
@@ -264,7 +302,7 @@ ol {
         align-items: center;
     }
 
-    /* ---------BODY INDEX-------- */
+    /* -----------------------------------BODY INDEX------------------------------------------------ */
     .main__ofertas-section__contenedor-fig-index {
         display: grid;
         grid-template-areas:
@@ -279,12 +317,41 @@ ol {
     .ofertas-seccion__tarjeta p {
         width: 30vw;
     }
-    
+
     .ofertas-seccion__tarjeta img {
         width: 30vw;
-    
+
     }
-    
+
+    /* -----------------------------------BODY PAGES PRODUCTOS------------------------------------------------ */
+    .main-pages {
+        display: grid;
+        grid-template-areas:
+            "main-pages__marcas main-pages__productos"
+        ;
+    }
+
+    .main-pages__productos-contenedor-figuras {
+        display: grid;
+        grid-template-areas:
+            "ofertas-seccion__tarjeta ofertas-seccion__tarjeta"
+            "ofertas-seccion__tarjeta ofertas-seccion__tarjeta";
+        align-items: baseline;
+        justify-content: center;
+        ;
+
+    }
+
+    .ofertas-seccion__tarjeta p {
+        width: 30vw;
+    }
+
+    .ofertas-seccion__tarjeta img {
+        width: 30vw;
+
+    }
+
+
 
 }
 
@@ -302,11 +369,19 @@ ol {
     .ofertas-seccion__tarjeta p {
         width: 20vw;
     }
-    
+
     .ofertas-seccion__tarjeta img {
         width: 20vw;
-    
+
     }
-    
+
+    .main-pages__productos-contenedor-figuras {
+        display: grid;
+        grid-template-areas:
+            "ofertas-seccion__tarjeta ofertas-seccion__tarjeta ofertas-seccion__tarjeta ofertas-seccion__tarjeta";
+        align-items: baseline;
+        justify-content: center;
+        ;
+
 
 }
