@@ -215,17 +215,13 @@ ol {
 
 .main-pages__marcas {
     display: none;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; */
-    /*background-color: blue;*/
+    
 }
 
 .main-pages__marcas-h2 {
     font-family: righteos, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .main-pages__marcas-items {
@@ -238,8 +234,9 @@ ol {
 .main-pages__productos-h2 {
     font-family: righteos, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
+
 
 .main-pages__productos-contenedor-figuras {
     display: flex;
@@ -250,6 +247,83 @@ ol {
 
 }
 
+
+/*---------------------------------------BODY PAGE CONTACTENOS hasta 576px------------------------------------------- */
+.main-contactenos{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.main__contactenos-h2{
+    font-family: righteos, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.main__contactenos-form{
+    gap: 10px;
+    width: 60vw;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.main__contactenos-form-nombre-usuario{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.main__contactenos-form-email-usuario{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.main__contactenos-form-motivo-mensaje{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.main__contactenos-form-mensaje-usuario{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;    
+}
+
+.main__contactenos-form-nombre-usuario input{
+    max-width: 100%;
+    width: 100%;
+    
+}
+
+.main__contactenos-form-email-usuario input{
+    max-width: 100%;
+    width: 100%;
+    
+}
+
+.main__contactenos-form-mensaje-usuario textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    width: 100%;
+    
+}
+
+.main__contactenos-form-sumit-reset{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
 /*------------------------------------------MEDIA--------------------------------------------------------*/
 @media(min-width: 576px) {
@@ -362,7 +436,6 @@ ol {
     }
 
 
-
 }
 
 @media(min-width: 800px) {
@@ -395,5 +468,13 @@ ol {
         ;
 
 
+    }
+
+    /* -----------------------------------BODY PAGE CONTACTENOS------------------------------------------------ */
+    .main__contactenos-form{
+        gap: 10px;
+        width: 40vw;
+        border-radius: 20px;
+        background-color: rgba(0,0,0,0.2);
     }
 }
