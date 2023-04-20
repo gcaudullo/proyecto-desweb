@@ -1,0 +1,187 @@
+@import "./base";
+@import "./components/header";
+@import "./components/footer";
+@import "./pages/index";
+
+
+/*---------------------------------------BODY PAGES PRODUCTOS hasta 576px------------------------------------------- */
+
+.main-pages {
+    padding: 15px;
+}
+
+.main-pages__marcas {
+    display: none;
+
+}
+
+.main-pages__marcas-h2 {
+    font-family: righteos, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.main-pages__marcas-items {
+    text-align: center;
+    padding: 0px;
+    font-size: 1.2rem;
+}
+
+
+.main-pages__productos-h2 {
+    font-family: righteos, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+
+.main-pages__productos-contenedor-figuras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /*background-color: blue;*/
+
+}
+
+
+/*---------------------------------------BODY PAGE CONTACTENOS hasta 576px------------------------------------------- */
+.main-contactenos {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__contactenos-h2 {
+    font-family: righteos, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.main__contactenos-form {
+    gap: 10px;
+    width: 60vw;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main__contactenos-form-nombre-usuario {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.main__contactenos-form-email-usuario {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.main__contactenos-form-motivo-mensaje {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.main__contactenos-form-mensaje-usuario {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.main__contactenos-form-nombre-usuario input {
+    max-width: 100%;
+    width: 100%;
+
+}
+
+.main__contactenos-form-email-usuario input {
+    max-width: 100%;
+    width: 100%;
+
+}
+
+.main__contactenos-form-mensaje-usuario textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    width: 100%;
+
+}
+
+.main__contactenos-form-sumit-reset {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*------------------------------------------MEDIA--------------------------------------------------------*/
+@media(min-width: 576px) {
+
+    /* -----------------------------------BODY PAGES PRODUCTOS------------------------------------------------ */
+    .main-pages {
+        display: grid;
+        grid-template-areas:
+            "main-pages__marcas main-pages__productos"
+        ;
+    }
+
+    .main-pages__marcas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        /*background-color: blue;*/
+    }
+
+    .main-pages__productos-contenedor-figuras {
+        display: grid;
+        grid-template-areas:
+            "ofertas-seccion__tarjeta ofertas-seccion__tarjeta"
+            "ofertas-seccion__tarjeta ofertas-seccion__tarjeta";
+        align-items: baseline;
+        justify-content: center;
+        ;
+
+    }
+
+    .ofertas-seccion__tarjeta p {
+        width: 30vw;
+    }
+
+    .ofertas-seccion__tarjeta img {
+        width: 30vw;
+
+    }
+
+
+}
+
+@media(min-width: 800px) {
+
+    .main-pages__productos-contenedor-figuras {
+        display: grid;
+        grid-template-areas:
+            "ofertas-seccion__tarjeta ofertas-seccion__tarjeta ofertas-seccion__tarjeta ofertas-seccion__tarjeta";
+        align-items: baseline;
+        justify-content: center;
+        ;
+
+
+    }
+
+    /* -----------------------------------BODY PAGE CONTACTENOS------------------------------------------------ */
+    .main__contactenos-form {
+        gap: 10px;
+        width: 40vw;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}

@@ -1,0 +1,35 @@
+//reseteos de css y declaración de variables
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* toda la caja con el padding y el borde forma parte de ese 100% */
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: "acme";
+    src: url("../fonts/Acme/Acme-Regular.ttf");
+}
+
+@font-face {
+    font-family: "permanentmaker";
+    src: url("../fonts/Permanent_Marker/PermanentMarker-Regular.ttf");
+}
+
+@font-face {
+    font-family: "righteos";
+    src: url("../fonts/Righteous/Righteous-Regular.ttf");
+}
+
+* {
+    font-family: 'acme', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
