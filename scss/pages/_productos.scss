@@ -37,7 +37,6 @@
 
         }
     }
-
 }
 
 /*------------------------------------------BODY PAGES PRODUCTOS desde 576px a 800px--------------------------------------------------------*/
@@ -67,21 +66,22 @@
             ;
 
         }
+    }
 
-        .ofertas-seccion__tarjeta {
-            p {
-                width: 30vw;
-            }
+    .ofertas-seccion__tarjeta {
+        p {
+            width: 30vw;
+        }
 
-            img {
-                width: 30vw;
-            }
+        img {
+            width: 30vw;
         }
     }
 }
 
 @media(min-width: 800px) {
-/*------------------------------------------BODY PAGES PRODUCTOS mas de 800px--------------------------------------------------------*/
+
+    /*------------------------------------------BODY PAGES PRODUCTOS mas de 800px--------------------------------------------------------*/
     .main-pages__productos-contenedor-figuras {
         display: grid;
         grid-template-areas:
