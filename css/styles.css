@@ -155,6 +155,35 @@ ol {
     align-items: center;
   }
 }
+.ofertas-seccion__tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.ofertas-seccion__tarjeta p {
+  width: 60vw;
+}
+.ofertas-seccion__tarjeta img {
+  width: 60vw;
+}
+
+@media (min-width: 576px) {
+  .ofertas-seccion__tarjeta p {
+    width: 30vw;
+  }
+  .ofertas-seccion__tarjeta img {
+    width: 30vw;
+  }
+}
+@media (min-width: 800px) {
+  .ofertas-seccion__tarjeta p {
+    width: 20vw;
+  }
+  .ofertas-seccion__tarjeta img {
+    width: 20vw;
+  }
+}
 /*----------------------------------------------BODY INDEX hasta 576px------------------------------------------------------ */
 .main {
   padding: 15px;
@@ -172,18 +201,6 @@ ol {
   align-items: center;
   gap: 10px;
   /*background-color: blue;*/
-}
-.main__ofertas-section__tarjeta {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-.main__ofertas-section__tarjeta p {
-  width: 60vw;
-}
-.main__ofertas-section__tarjeta img {
-  width: 60vw;
 }
 .main__nuestra-empresa {
   display: flex;
@@ -211,12 +228,6 @@ ol {
     align-items: baseline;
     justify-content: center;
   }
-  .main__ofertas-section__tarjeta p {
-    width: 30vw;
-  }
-  .main__ofertas-section__tarjeta img {
-    width: 30vw;
-  }
 }
 /*----------------------------------------------BODY INDEX mas de 800px------------------------------------------------------ */
 @media (min-width: 800px) {
@@ -227,14 +238,7 @@ ol {
     justify-content: center;
     padding-top: 10px;
   }
-  .main__ofertas-section__tarjeta p {
-    width: 20vw;
-  }
-  .main__ofertas-section__tarjeta img {
-    width: 20vw;
-  }
 }
-/*---------------------------------------BODY PAGES PRODUCTOS hasta 576px------------------------------------------- */
 .main-pages {
   padding: 15px;
 }
@@ -264,7 +268,6 @@ ol {
   /*background-color: blue;*/
 }
 
-/*------------------------------------------BODY PAGES PRODUCTOS desde 576px a 800px--------------------------------------------------------*/
 @media (min-width: 576px) {
   .main-pages {
     display: grid;
@@ -283,15 +286,8 @@ ol {
     align-items: baseline;
     justify-content: center;
   }
-  .ofertas-seccion__tarjeta p {
-    width: 30vw;
-  }
-  .ofertas-seccion__tarjeta img {
-    width: 30vw;
-  }
 }
 @media (min-width: 800px) {
-  /*------------------------------------------BODY PAGES PRODUCTOS mas de 800px--------------------------------------------------------*/
   .main-pages__productos-contenedor-figuras {
     display: grid;
     grid-template-areas: "ofertas-seccion__tarjeta ofertas-seccion__tarjeta ofertas-seccion__tarjeta ofertas-seccion__tarjeta";

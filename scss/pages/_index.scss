@@ -19,21 +19,6 @@
             /*background-color: blue;*/
 
         }
-
-        &__tarjeta {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-
-            p {
-                width: 60vw;
-            }
-
-            img {
-                width: 60vw;
-            }
-        }
     }
 
 
@@ -74,17 +59,6 @@
                 ;
 
             }
-
-            &__tarjeta {
-                p {
-                    width: 30vw;
-                }
-
-                img {
-                    width: 30vw;
-
-                }
-            }
         }
     }
 }
@@ -103,18 +77,6 @@
                 justify-content: center;
                 padding-top: 10px;
 
-            }
-
-
-            &__tarjeta {
-                p {
-                    width: 20vw;
-                }
-
-                img {
-                    width: 20vw;
-
-                }
             }
         }
     }
