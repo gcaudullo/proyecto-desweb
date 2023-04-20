@@ -1,0 +1,95 @@
+/*---------------------------------------BODY PAGES PRODUCTOS hasta 576px------------------------------------------- */
+
+.main-pages {
+    padding: 15px;
+
+    &__marcas {
+        display: none;
+
+        &-h2 {
+            font-family: righteos, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+
+        &-items {
+            text-align: center;
+            padding: 0px;
+            font-size: 1.2rem;
+        }
+
+    }
+
+    &__productos {
+        &-h2 {
+            font-family: righteos, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 1.6rem;
+        }
+
+
+        &-contenedor-figuras {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            /*background-color: blue;*/
+
+        }
+    }
+
+}
+
+/*------------------------------------------BODY PAGES PRODUCTOS desde 576px a 800px--------------------------------------------------------*/
+@media(min-width: 576px) {
+
+    .main-pages {
+        display: grid;
+        grid-template-areas:
+            "main-pages__marcas main-pages__productos"
+        ;
+
+        &__marcas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            /*background-color: blue;*/
+        }
+
+        &__productos-contenedor-figuras {
+            display: grid;
+            grid-template-areas:
+                "ofertas-seccion__tarjeta ofertas-seccion__tarjeta"
+                "ofertas-seccion__tarjeta ofertas-seccion__tarjeta";
+            align-items: baseline;
+            justify-content: center;
+            ;
+
+        }
+
+        .ofertas-seccion__tarjeta {
+            p {
+                width: 30vw;
+            }
+
+            img {
+                width: 30vw;
+            }
+        }
+    }
+}
+
+@media(min-width: 800px) {
+/*------------------------------------------BODY PAGES PRODUCTOS mas de 800px--------------------------------------------------------*/
+    .main-pages__productos-contenedor-figuras {
+        display: grid;
+        grid-template-areas:
+            "ofertas-seccion__tarjeta ofertas-seccion__tarjeta ofertas-seccion__tarjeta ofertas-seccion__tarjeta";
+        align-items: baseline;
+        justify-content: center;
+        ;
+
+
+    }
+}

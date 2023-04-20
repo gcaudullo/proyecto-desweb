@@ -1,0 +1,86 @@
+/*---------------------------------------BODY PAGE CONTACTENOS hasta 576px------------------------------------------- */
+.main-contactenos {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-h2 {
+        font-family: righteos, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    
+    &-form {
+        gap: 10px;
+        width: 60vw;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.2);
+
+        &-nombre-usuario {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            flex-wrap: wrap;
+            input {
+                max-width: 100%;
+                width: 100%;
+            
+            }
+        }
+        
+        &-email-usuario {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            flex-wrap: wrap;
+            input {
+                max-width: 100%;
+                width: 100%;
+            
+            }
+        }
+        
+        &-motivo-mensaje {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+        
+        &-mensaje-usuario {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 10px;
+            textarea {
+                min-height: 100px;
+                max-height: 200px;
+                max-width: 100%;
+                width: 100%;
+            
+            }
+        }
+        &-sumit-reset {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+
+
+
+@media(min-width: 800px) {
+
+    /* -----------------------------------BODY PAGE CONTACTENOS------------------------------------------------ */
+    .main__contactenos-form {
+        gap: 10px;
+        width: 40vw;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
