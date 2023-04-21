@@ -52,6 +52,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 15vh 10vh;
         grid-gap: 10px;
+        align-items: center;
 
         &__logo {
             display: block;
