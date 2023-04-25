@@ -7,7 +7,7 @@
     
 
     p {
-        width: 50vw;
+        width: 60vw;
     }
 
     img {
@@ -21,7 +21,7 @@
 @media(min-width: 576px) {
     .ofertas-seccion__tarjeta {
         p {
-            width: 25vw;
+            width: 30vw;
         }
 
         img {
@@ -34,10 +34,10 @@
     }
 }
 
-@media(min-width: 800px) {
+@media(min-width: 1200px) {
     .ofertas-seccion__tarjeta {
         p {
-            width: 15vw;
+            width: 20vw;
         }
 
         img {

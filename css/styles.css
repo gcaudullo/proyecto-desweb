@@ -30,6 +30,10 @@ ol {
   font-family: "acme", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+.bg-head-foot {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .header {
   background-color: rgb(0, 0, 0);
   padding-top: 15px;
@@ -164,7 +168,7 @@ ol {
   align-items: center;
 }
 .ofertas-seccion__tarjeta p {
-  width: 50vw;
+  width: 60vw;
 }
 .ofertas-seccion__tarjeta img {
   width: 60vw;
@@ -175,7 +179,7 @@ ol {
 
 @media (min-width: 576px) {
   .ofertas-seccion__tarjeta p {
-    width: 25vw;
+    width: 30vw;
   }
   .ofertas-seccion__tarjeta img {
     width: 30vw;
@@ -184,9 +188,9 @@ ol {
     width: 15vw;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   .ofertas-seccion__tarjeta p {
-    width: 15vw;
+    width: 20vw;
   }
   .ofertas-seccion__tarjeta img {
     width: 20vw;
@@ -195,6 +199,17 @@ ol {
     width: 10vw;
   }
 }
+.mi-btn {
+  background-color: rgb(71, 70, 70);
+  color: white;
+}
+
+.mi-btn:hover {
+  background-color: white;
+  border: 2px solid rgb(71, 70, 70);
+  color: rgb(71, 70, 70);
+}
+
 /*----------------------------------------------BODY INDEX hasta 576px------------------------------------------------------ */
 .main {
   padding: 15px;
@@ -241,7 +256,7 @@ ol {
   }
 }
 /*----------------------------------------------BODY INDEX mas de 800px------------------------------------------------------ */
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   .main__ofertas-section__contenedor-fig-index {
     display: grid;
     grid-template-areas: "ofertas-seccion__tarjeta ofertas-seccion__tarjeta ofertas-seccion__tarjeta ofertas-seccion__tarjet";
@@ -253,16 +268,21 @@ ol {
 .main-pages {
   padding: 15px;
 }
-.main-pages__marcas {
+.main-pages__filtros {
   display: none;
 }
-.main-pages__marcas-h2 {
+.main-pages__filtros-h2 {
   font-family: righteos, "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  text-align: center;
+  text-align: left;
   font-size: 1.3rem;
 }
-.main-pages__marcas-items {
-  text-align: center;
+.main-pages__filtros-h3 {
+  font-family: righteos, "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: left;
+  font-size: 1.15rem;
+}
+.main-pages__filtros-marcas-items {
+  text-align: left;
   padding: 0px;
   font-size: 1.2rem;
 }
@@ -284,10 +304,10 @@ ol {
     display: grid;
     grid-template-areas: "main-pages__marcas main-pages__productos";
   }
-  .main-pages__marcas {
+  .main-pages__filtros {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     gap: 10px;
     /*background-color: blue;*/
   }
@@ -298,7 +318,7 @@ ol {
     justify-content: center;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   .main-pages__productos-contenedor-figuras {
     display: grid;
     grid-template-areas: "ofertas-seccion__tarjeta ofertas-seccion__tarjeta ofertas-seccion__tarjeta ofertas-seccion__tarjeta";

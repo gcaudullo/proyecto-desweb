@@ -1,17 +1,23 @@
 .main-pages {
     padding: 15px;
 
-    &__marcas {
+    &__filtros {
         display: none;
 
         &-h2 {
             font-family: righteos, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            text-align: center;
+            text-align: left;
             font-size: 1.3rem;
         }
 
-        &-items {
-            text-align: center;
+        &-h3 {
+            font-family: righteos, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: left;
+            font-size: 1.15rem;
+        }
+
+        &-marcas-items {
+            text-align: left;
             padding: 0px;
             font-size: 1.2rem;
         }
@@ -44,10 +50,10 @@
             "main-pages__marcas main-pages__productos"
         ;
 
-        &__marcas {
+        &__filtros {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: left;
             gap: 10px;
             /*background-color: blue;*/
         }
@@ -67,7 +73,7 @@
 
 }
 
-@media(min-width: 800px) {
+@media(min-width: 1200px) {
     .main-pages__productos-contenedor-figuras {
         display: grid;
         grid-template-areas:

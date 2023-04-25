@@ -33,3 +33,10 @@ ol {
 * {
     font-family: 'acme', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+$color-head-foot: rgba(0,0,0,0);
+
+.bg-head-foot{
+    background-color: $color-head-foot;
+
+}
