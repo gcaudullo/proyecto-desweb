@@ -3,38 +3,49 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
+    
 
     p {
-        width: 60vw;
+        width: 50vw;
     }
 
     img {
         width: 60vw;
     }
+    a{
+        width: 30vw
+    };
 }
 
 @media(min-width: 576px) {
     .ofertas-seccion__tarjeta {
         p {
-            width: 30vw;
+            width: 25vw;
         }
 
         img {
             width: 30vw;
 
         }
+        a{
+            width: 15vw
+        };
     }
 }
 
 @media(min-width: 800px) {
     .ofertas-seccion__tarjeta {
         p {
-            width: 20vw;
+            width: 15vw;
         }
 
         img {
             width: 20vw;
 
         }
+        a{
+            width: 10vw
+        };
     }
 }

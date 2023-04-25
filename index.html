@@ -8,6 +8,8 @@
     <meta name="description"
         content="Componentes, Conectividad, Computadoras, Monitores, Impresoras, Periféricos, Gaming, Audio e Imagen. Enviamos a todo el País. Tecnología con garantía.">
     <title>GC Store - La mejor tienda de Informatica y tecnologia del País</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -22,11 +24,12 @@
             <h1>GC Store</h1>
         </div>
         <form class="header__form" action="">
-            <input class="header__form-search" type="search" placeholder="Buscar...">
-            <input class="header__form-submit-search" type="submit" value="enviar">
+            <input class="header__form-search form-control-sm me-2" type="search" placeholder="Buscar...">
+            <input class="header__form-submit-search btn btn-sm btn-ligth bg-body-secondary" type="submit" value="enviar">
         </form>
         <nav class="header__nav">
             <ul class="header__nav-list-nav">
+                <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./pages/cel-y-tec.html">Celulares y Tecnología</a></li>
                 <li><a href="./pages/notebooks.html">Notebooks</a></li>
                 <li><a href="./pages/tv-audio-video.html">TV y Audios</a></li>
@@ -42,28 +45,32 @@
         <section class="main__ofertas-section">
             <h2 class="main__ofertas-section-h2">Nuestras mejores Ofertas</h2>
             <div class="main__ofertas-section__contenedor-fig-index">
-                <div data-aos="zoom-in" class="ofertas-seccion__tarjeta">
+                <div data-aos="zoom-in" class="ofertas-seccion__tarjeta shadow-sm p-2">
                     <img src="./img/xiaomi-redmi-10a-dual-sim-64-gb-plata-cromada-3-gb-ram.jpg"
                         alt="Celular Xiaomi Redmi Note 10">
                     <p>xiaomi redmi 10a dual sim 64gb </p>
                     <p><strong>USD 140</strong></p>
+                    <a href="#" class="btn btn-secondary">Comprar</a>
                 </div>
-                <div data-aos="zoom-in" class="ofertas-seccion__tarjeta">
+                <div data-aos="zoom-in" class="ofertas-seccion__tarjeta shadow-sm p-2">
                     <img src="./img/mixer-enxuta-sdaenxm4399-negro-y-acero-inoxidable-220v-600w.jpg"
                         alt="Mixer Enxuta 220V 600W">
                     <p>Mixer Enxuta sdaenxm4399 </p>
                     <p><strong>USD 43</strong></p>
+                    <a href="#" class="btn btn-secondary">Comprar</a>
                 </div>
-                <div data-aos="zoom-in" class="ofertas-seccion__tarjeta">
+                <div data-aos="zoom-in" class="ofertas-seccion__tarjeta shadow-sm p-2">
                     <img src="./img/plancha-a-vapor-enxuta.jpg" alt="Plancha a vapor Enxuta">
-                    <pn>Plancha a Vapor Enxuta Sdaenxp284 </pn>
+                    <p>Plancha a Vapor Enxuta Sdaenxp284 </h3>
                     <p><strong>USD 99</strong></p>
+                    <a href="#" class="btn btn-secondary">Comprar</a>
                 </div>
-                <div data-aos="zoom-in" class="ofertas-seccion__tarjeta">
+                <div data-aos="zoom-in" class="ofertas-seccion__tarjeta shadow-sm p-2">
                     <img src="./img/control-de-microsoft-xbox-core-shock-blue.jpg"
                         alt="Control de Microsoft Xbox core shock blue">
                     <p>Control de Microsoft Xbox core shock blue</p>
                     <p><strong>USD 99</strong></p>
+                    <a href="#" class="btn btn-secondary">Comprar</a>
                 </div>
             </div>
         </section>
@@ -82,7 +89,7 @@
                     tecnológicos para poder ofrecer siempre lo mejor a nuestros clientes. Contáctenos hoy mismo para
                     descubrir cómo podemos ayudarlo a su empresa a alcanzar su máximo potencial.</p>
                 <figure class="main__nuestra-empresa__figure">
-                    <img src="./img/nuestro-local.jpg" alt="Foto de nuestro local" width="500">
+                    <img src="./img/nuestro-local.jpg" alt="Foto de nuestro local">
                 </figure>
             </div>
 
@@ -126,6 +133,9 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

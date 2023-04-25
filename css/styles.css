@@ -161,28 +161,38 @@ ol {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: center;
 }
 .ofertas-seccion__tarjeta p {
-  width: 60vw;
+  width: 50vw;
 }
 .ofertas-seccion__tarjeta img {
   width: 60vw;
 }
+.ofertas-seccion__tarjeta a {
+  width: 30vw;
+}
 
 @media (min-width: 576px) {
   .ofertas-seccion__tarjeta p {
-    width: 30vw;
+    width: 25vw;
   }
   .ofertas-seccion__tarjeta img {
     width: 30vw;
+  }
+  .ofertas-seccion__tarjeta a {
+    width: 15vw;
   }
 }
 @media (min-width: 800px) {
   .ofertas-seccion__tarjeta p {
-    width: 20vw;
+    width: 15vw;
   }
   .ofertas-seccion__tarjeta img {
     width: 20vw;
+  }
+  .ofertas-seccion__tarjeta a {
+    width: 10vw;
   }
 }
 /*----------------------------------------------BODY INDEX hasta 576px------------------------------------------------------ */
@@ -358,6 +368,7 @@ ol {
   padding: 10px;
   justify-content: space-around;
   flex-wrap: wrap;
+  border-radius: 10px;
 }
 
 @media (min-width: 800px) {
