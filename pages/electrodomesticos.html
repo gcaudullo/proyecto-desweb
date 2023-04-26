@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GC Store - Electrodomesticos de ultima generación y alta calidad</title>
-    <meta name="description" content="Contamos con un amplio catalogo de Electrodomésticos con la mas alta calidad precio del mercado. Enviamos a todo el País. Tecnología con garantía.">
+    <meta name="description"
+        content="Contamos con un amplio catalogo de Electrodomésticos con la mas alta calidad precio del mercado. Enviamos a todo el País. Tecnología con garantía.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -23,8 +25,9 @@
             <h1>GC Store</h1>
         </div>
         <form class="header__form" action="">
-            <input class="header__form-search" type="search" placeholder="Buscar...">
-            <input class="header__form-submit-search" type="submit" value="enviar">
+            <input class="header__form-search form-control-sm me-2" type="search" placeholder="¿Que estas buscando?">
+            <input class="header__form-submit-search btn btn-sm mi-btn" type="submit"
+                value="enviar">
         </form>
         <nav class="header__nav">
             <ul class="header__nav-list-nav">
@@ -249,34 +252,44 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer__contenedor-redes">
-            <h3 class="footer__contenedor-redes-h3">Siguenos En:</h3>
-            <ul>
-                <li class="footer__contenedor-redes-li"><img src="../img/fb_icon-icons.com_65434.png"
-                        alt="facebook-icon"><a href="">Facebook</a></li>
-                <li class="footer__contenedor-redes-li"><img
-                        src="../img/social_media_logo_twitter_icon-icons.com_59061.png" alt="facebook-icon"><a
-                        href="">Twitter</a></li>
-                <li class="footer__contenedor-redes-li"><img
-                        src="../img/social_media_logo_instagram_icon-icons.com_59062.png" alt="facebook-icon"><a
-                        href="">Instagram</a></li>
-            </ul>
-        </div>
+    <footer class="container-fluid bg-head-foot text-white mt-3">
+        <div class="container">
+            <div class="row d-flex justify-content-lg-beetween align-items-center border-bottom">
+                <!-- Redes Sociales -->
+                <div class="col-12 col-md-6 p-3">
+                    <h3 class="text-center">Redes Sociales</h3>
+                    <div class="fs-2 d-flex justify-content-around">
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-youtube"></i>
+                        <i class="bi bi-twitter"></i>
+                    </div>
+                    <!-- Subscripción al newsletter -->
+                    <div class="col-12 p-5">
+                        <h3 class="text-center">Suscríbete a nuestro NewsLetter</h3>
+                        <form class="d-flex gap-2" action="">
+                            <input class="form-control" type="email" placeholder="nombre@ejemplo.com">
+                            <input class="btn mi-btn" type="submit" value="Suscribirse">
+                        </form>
+                    </div>
+                </div>
+                <!-- Información de Contacto -->
+                <div class="col-12 col-md-6 d-flex flex-column align-items-center p-3">
+                    <h3 class="text-center">Contacto</h3>
+                    <ul>
+                        <li>Direccion: Suipacha 853</li>
+                        <li>telefono: 0054 11 1234 5678 </li>
+                        <li>e-mail: gcstore@gmail.com</li>
+                        <li>WhatsAPP: 0054 9 11 1234 5678 </li>
+                    </ul>
+                    <iframe class="align-items-center"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11045.826780831363!2d-58.38901411533874!3d-34.60557881953259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac9b6e2e197%3A0x750fd7bfead405ed!2sSuipacha%20853%2C%20C1008AAQ%20CABA%2C%20Argentina!5e0!3m2!1ses-419!2suy!4v1678734694601!5m2!1ses-419!2suy"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        <div class="footer__contacto">
-            <h3 class="footer__contacto-h3">Contacto:</h3>
-            <div class="footer__contacto-contenedor">
-                <ul>
-                    <li>Direccion: Suipacha 853</li>
-                    <li>telefono: 0054 11 1234 5678 </li>
-                    <li>e-mail: gcstore@gmail.com</li>
-                    <li>WhatsAPP: 0054 9 11 1234 5678 </li>
-                </ul>
-                <iframe class="footer__contacto-iframe-gmaps"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11045.826780831363!2d-58.38901411533874!3d-34.60557881953259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac9b6e2e197%3A0x750fd7bfead405ed!2sSuipacha%20853%2C%20C1008AAQ%20CABA%2C%20Argentina!5e0!3m2!1ses-419!2suy!4v1678734694601!5m2!1ses-419!2suy"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div>
+                <p class="text-center m-0 p-2">Gonzalo Caudullo | Todos los derechos reservados</p>
             </div>
         </div>
 
@@ -286,8 +299,8 @@
         AOS.init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

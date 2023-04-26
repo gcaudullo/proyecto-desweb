@@ -4,7 +4,7 @@
     padding-left: 15px;
     padding-right: 15px;
     color: whitesmoke;
-    /* padding-bottom: none; */
+    
 
 
     &__titulo-principal h1 {
@@ -21,7 +21,8 @@
     &__nav-list-nav {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        //gap: 10px;
+        margin-bottom: 0;
 
 
         li {
@@ -51,7 +52,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 15vh 10vh;
-        grid-gap: 10px;
+        grid-gap: 0px;
         align-items: center;
 
         &__logo {
