@@ -1,14 +1,13 @@
 .header {
-    background-color: rgb(0, 0, 0);
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
-    color: whitesmoke;
+    color: $txt-head-foot;
     
 
 
     &__titulo-principal h1 {
-        color: whitesmoke;
+        color: $txt-head-foot;
         font-family: permanentmaker, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 2rem;
         text-align: center;
@@ -19,8 +18,7 @@
     }
 
     &__nav-list-nav {
-        display: flex;
-        flex-direction: column;
+        @include flex(column);
         //gap: 10px;
         margin-bottom: 0;
 
@@ -32,7 +30,7 @@
 
             a {
                 text-decoration: none;
-                color: white;
+                color: $txt-head-foot;
             }
 
         }
@@ -61,8 +59,7 @@
         }
 
         &__form {
-            display: flex;
-            flex-direction: row;
+            @include flex(row);
             justify-content: end;
             align-items: center;
         }
@@ -70,8 +67,7 @@
 
 
         &__nav-list-nav {
-            display: flex;
-            flex-direction: row;
+            @include flex(row);
             justify-content: space-around;
 
         }

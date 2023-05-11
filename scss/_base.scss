@@ -35,13 +35,18 @@ ol {
 }
 
 $bgcolor-head-foot: rgb(0, 0, 0);
-$txt-head-foot:  rgb(255, 255, 255);
+$txt-head-foot:  rgb(249, 253, 253);
 
 .bg-head-foot{
     background-color: $bgcolor-head-foot;
 
 }
-.text-white{
+.text-color{
     color: $txt-head-foot;
 
+}
+
+@mixin flex($direction){
+    display: flex;
+    flex-direction: $direction;
 }

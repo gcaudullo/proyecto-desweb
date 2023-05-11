@@ -1,6 +1,5 @@
 .ofertas-seccion__tarjeta {
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     justify-content: center;
     text-align: center;
     align-items: center;

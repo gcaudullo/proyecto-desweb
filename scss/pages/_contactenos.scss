@@ -1,8 +1,7 @@
 /*---------------------------------------BODY PAGE CONTACTENOS hasta 576px------------------------------------------- */
 .main-contactenos {
     padding: 15px;
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     align-items: center;
 
     &-h2 {
@@ -18,8 +17,7 @@
         background-color: rgba(0, 0, 0, 0.2);
 
         &-nombre-usuario {
-            display: flex;
-            flex-direction: row;
+            @include flex(row);
             padding: 10px;
             flex-wrap: wrap;
             input {
@@ -30,8 +28,7 @@
         }
         
         &-email-usuario {
-            display: flex;
-            flex-direction: row;
+            @include flex(row);
             padding: 10px;
             flex-wrap: wrap;
             input {
@@ -42,15 +39,13 @@
         }
         
         &-motivo-mensaje {
-            display: flex;
-            flex-direction: row;
+            @include flex(row);
             padding: 10px;
             flex-wrap: wrap;
         }
         
         &-mensaje-usuario {
-            display: flex;
-            flex-direction: row;
+            @include flex(row);
             flex-wrap: wrap;
             padding: 10px;
             textarea {
@@ -62,8 +57,7 @@
             }
         }
         &-sumit-reset {
-            display: flex;
-            flex-direction: row;
+            @include flex(row);
             padding: 10px;
             justify-content: space-around;
             flex-wrap: wrap;

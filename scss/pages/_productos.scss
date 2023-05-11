@@ -33,8 +33,7 @@
 
 
         &-contenedor-figuras {
-            display: flex;
-            flex-direction: column;
+            @include flex(column);
             align-items: center;
             gap: 10px;
             /*background-color: blue;*/
@@ -51,8 +50,7 @@
         ;
 
         &__filtros {
-            display: flex;
-            flex-direction: column;
+            @include flex(column);
             align-items: left;
             gap: 10px;
             /*background-color: blue;*/

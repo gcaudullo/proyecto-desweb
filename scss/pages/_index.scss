@@ -11,8 +11,7 @@
         }
 
         &__contenedor-fig-index {
-            display: flex;
-            flex-direction: column;
+            @include flex(column);
             /* justify-content: space-around; */
             align-items: center;
             gap: 10px;
@@ -23,8 +22,7 @@
 
 
     &__nuestra-empresa {
-        display: flex;
-        flex-flow: column;
+        @include flex(column);
         align-items: center;
 
         h2 {

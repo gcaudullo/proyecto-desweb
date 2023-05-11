@@ -1,10 +1,10 @@
-.mi-btn{
-background-color: rgb(71, 70, 70);
-color: white;
-}
+.mi-btn {
+    background-color: rgb(71, 70, 70);
+    color: white;
 
-.mi-btn:hover{
-    background-color: white;
-    border: 2px solid rgb(71, 70, 70);
-    color:rgb(71, 70, 70);
+    &:hover {
+        background-color: white;
+        border: 2px solid rgb(71, 70, 70);
+        color: rgb(71, 70, 70);
+    }
 }
